@@ -1,0 +1,29 @@
+{
+  "name": "ividiyo-backend",
+  "version": "0.0.1",
+  "description": "A lightweight backend for token issuing, user managment and payments",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuaazBayat/ividiyo.git"
+  },
+  "author": "muaaz bayat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuaazBayat/ividiyo/issues"
+  },
+  "homepage": "https://github.com/MuaazBayat/ividiyo#readme",
+  "dependencies": {
+    "@gomomento/sdk": "^1.111.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.1.1"
+  }
+}

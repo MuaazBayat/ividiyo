@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "a3f62829-bb4b-4943-9b2d-b54df3914ed1",
+		"name": "ividiyo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25416265",
+		"_collection_link": "https://helm-engine.postman.co/workspace/storify~fa757f7f-ed98-4f3e-a311-15d0df215e54/collection/25416265-a3f62829-bb4b-4943-9b2d-b54df3914ed1?action=share&source=collection_link&creator=25416265"
+	},
+	"item": [
+		{
+			"name": "agent token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/token?agentId=xyz456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"token"
+					],
+					"query": [
+						{
+							"key": "agentId",
+							"value": "xyz456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "visitor token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/token?visitorId=abc123&agentId=xyz456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"token"
+					],
+					"query": [
+						{
+							"key": "visitorId",
+							"value": "abc123"
+						},
+						{
+							"key": "agentId",
+							"value": "xyz456"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
